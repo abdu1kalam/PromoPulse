@@ -1,12 +1,10 @@
 import { cn } from "@/lib/utils";
 
-type SpinnerProps = {
-  noPadding?: boolean;
-};
+type SpinnerProps = {};
 
-export const Spinner = ({ noPadding }: SpinnerProps) => {
+export const Spinner = (props: SpinnerProps) => {
   return (
-    <div className={cn("w-full flex justify-center", noPadding ? "" : "py-10")}>
+    <div className={cn("w-full flex justify-center")}>
       <div role="status">
         <svg
           aria-hidden="true"
